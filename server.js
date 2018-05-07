@@ -4,7 +4,7 @@ const port = process.env.PORT || 8080;
 const moment = require('moment');
 
 moment().format();
-app.use(express.static('/public'));
+app.use(express.static(__dirname + '/public'));
 
 // Routes
 
